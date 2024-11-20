@@ -47,6 +47,10 @@ html:root {
     font-size: 1em;
 }
 
+.p-20 {
+    font-size: 1.25em;
+}
+
 .p-24 {
     font-size: 1.618em;
 }
@@ -89,9 +93,6 @@ header {
     justify-content: space-between;
 }
 
-header p {
-    margin-top: -10px
-}
 
 nav {
     display: flex;
@@ -119,11 +120,22 @@ section {
     align-items: center;
 }
 
+.start p {
+    padding: 10px 0 0 0;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
     align-items: center;
     /* width: 100%; */
+}
+
+.flex-r {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 .flex-column {
@@ -182,6 +194,7 @@ section {
     background-color: var(--white);
     border-radius: 40px;
     /* height: 100%; */
+    height: 100%;
 }
 
 .white-box img {
@@ -213,7 +226,7 @@ dialog {
     left: 50%;
     transform: translate(-50%, -50%);
     border: none;
-    border-radius: 25px;
+    border-radius: 35px;
 }
 
 .modal-content1, .modal-content4 {
@@ -222,7 +235,7 @@ dialog {
     width: auto;
     max-width: 700px;
     background-color: var(--orange);
-    border-radius: 5px;
+    border-radius: 35px;
     text-align: center;
     overflow: hidden;
 }
@@ -233,7 +246,7 @@ dialog {
     width: auto;
     max-width: 700px;
     background: linear-gradient(135deg, #B49AE1, #FFD8BF, #C3FD9C);
-    border-radius: 5px;
+    border-radius: 25px;
     text-align: center;
     overflow: hidden;
 }
@@ -249,11 +262,11 @@ dialog {
     min-width: 100%;
     transition: transform 0.5s ease-in-out;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .slider-img {
-    width: 75%;
+    width: 90%;
     border-radius: 75px;
 }
 
@@ -263,8 +276,8 @@ dialog {
     padding: 0 6px;
     border: none;
     border-radius: 50%;
-    top: 10px;
-    right: 15px;
+    top: 20px;
+    right: 25px;
     font-size: 24px;
     cursor: pointer;
     z-index: 2;
@@ -285,28 +298,44 @@ dialog {
     align-items: center;
 }
 
+.mb-25{
+    margin-bottom: 25px
+}
+
+.blue-a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.618em;
+    padding-top: 20px;
+}
+
 .blue-icons {
-    width: 36px;
+    width: 50px;
 }
 
 .green-orange {
-    width: 60%;
+    width: 75%;
     padding-top: 25px;
+}
+
+#about h2 {
+    margin-bottom: 30px;
 }
 
 #about h3 {
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+#about .p-24 {
+    padding: 10px 0;
 }
 
 .grid-2 {
     display: flex;
-    gap: 40px;
-    width: 85%;
+    justify-content: space-between;
     margin: 0 auto;
-    /* display: grid;
-    grid-template-columns: 2fr 2fr 1.5fr; */
-    /* justify-items: center; */
 }
 
 .last-div {
@@ -341,7 +370,8 @@ dialog {
 }
 
 .orange-last {
-    width: 70%;
+    width: 25%;
+    height: 25%;
 }
 
 #forparents p {

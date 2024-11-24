@@ -3,7 +3,7 @@ document.querySelector('.burger').addEventListener('click', function(){
     document.querySelector('.navigation').classList.toggle('open')
 })
 
-document.querySelectorAll('.navigation li').forEach(item => {
+document.querySelectorAll('.navigation a').forEach(item => {
     item.addEventListener('click', function() {
         document.querySelector('.burger').classList.remove('active');
         document.get('.navigation').classList.remove('open');

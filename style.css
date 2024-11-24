@@ -102,6 +102,31 @@ nav {
     width: 40%;
 }
 
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+
+.open{
+    display: flex !important;
+}
+
+.burger {
+    display: none;
+    position: relative;
+    z-index: 70;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 18px;
+    color: var(--white);
+    cursor: pointer;
+}
+
 nav a {
     text-decoration: none;
 }
@@ -118,6 +143,11 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.start div {
+    max-width: 700px;
 }
 
 .start p {
@@ -147,18 +177,23 @@ section {
 
 .head-img {
     width: 50%;
+    min-width: 330px;
+    max-width: 700px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.publish {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 4em;
+    margin-bottom: 4em;
 }
 
-.box1, .box2, .box3, .box4 {
+.publish_item {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    max-width: 598px;
     gap: 10px;
     background-color: var(--light-purple);
     border-radius: 75px;
@@ -167,7 +202,7 @@ section {
     7px 7px 6px var(--purple);
 }
 
-.box1 {
+/* .box1 {
     grid-column: 1;
     grid-row: 1;
 }
@@ -185,7 +220,7 @@ section {
 .box4 {
     grid-column: 2;
     grid-row: 2;
-}
+} */
 
 .white-box {
     display: flex;
@@ -336,6 +371,7 @@ dialog {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .last-div {
@@ -402,4 +438,96 @@ footer {
 
 .footer-a img {
     width: 36px;
+}
+
+@media (max-width: 1275px) {
+    .navigation {
+        background-color: white;
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        bottom: 0;
+        right: 0;
+        z-index: 40;
+        height: 100%;
+        width: 75%;
+        max-width: 350px;
+        gap: -5px;
+        padding-top: 30px;
+        padding-left: 30px;
+        background-color: var(--white);
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        box-shadow: 15px 0px 20px 6px;
+        animation: burgerAimation 0.4s;
+    }
+    
+    .select{
+        height: 50px;
+    }
+
+    .burger {
+        display: flex;
+        position: relative;
+        z-index: 70;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 18px;
+        color: var(--white);
+        cursor: pointer;
+    }
+    
+    .burger span {
+        height: 2px;
+        width: 80%;
+        background-color: var(--white);
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+    
+    .burger span::before, .burger span::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: var(--white);
+        transition: transform 0.3s ease;
+    }
+    
+    .burger span::before {
+        top: -8px;
+    }
+    
+    .burger span::after {
+        bottom: -8px;
+    }
+    
+    .burger.active span {
+        background-color: transparent;
+    }
+    
+    .burger.active span::before {
+        transform: translateY(8px) rotate(45deg);
+        background-color: var(--black);
+    }
+    
+    .burger.active span::after {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: var(--black);
+    }
+    
+    .open{
+        display: flex !important;
+        align-items: flex-start;
+    }
+
+    .open a {
+        color: var(--orange);
+    }
+    
+    .orange-last {
+        display: none;
+    }
 }

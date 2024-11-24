@@ -351,6 +351,7 @@ dialog {
 
 .green-orange {
     width: 75%;
+    min-width: 330px;
     padding-top: 25px;
 }
 
@@ -529,5 +530,27 @@ footer {
     
     .orange-last {
         display: none;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .p-24 {
+        font-size: 1em;
+    }
+    .blue-a {
+        font-size: 1em;
+    }
+    .blue-icons {
+        width: 36px;
+    }
+    #about .flex-r {
+        margin-bottom: 25px;
     }
 }

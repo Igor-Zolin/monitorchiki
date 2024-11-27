@@ -6,7 +6,7 @@ document.querySelector('.burger').addEventListener('click', function(){
 document.querySelectorAll('.navigation a').forEach(item => {
     item.addEventListener('click', function() {
         document.querySelector('.burger').classList.remove('active');
-        document.get('.navigation').classList.remove('open');
+        document.querySelector('.navigation').classList.remove('open');
     });
 })
 

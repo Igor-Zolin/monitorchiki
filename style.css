@@ -10,10 +10,12 @@ html {
 html:root {
     font-size: 16px;
     --green: #8BC032;
+    --dark-green: #43832C;
     --purple: #887BCB;
     --light-purple: #BEB3F6;
     --white: #FFFFFF;
     --orange: #E77F40;
+    --dark-orange: #A44C17;
     --blue: #5686E1;
     --black: #000000;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,20 +25,53 @@ html:root {
     color: var(--orange);
 }
 
+.bg_orange {
+    background-color: var(--orange);
+}
+
+
+.bg_white {
+    background-color: var(--white);
+}
+
 .blue {
     color: var(--blue);
+}
+
+.bg_blue {
+    background-color: var(--blue);
 }
 
 .green {
     color: var(--green);
 }
 
+.bg_green {
+    background-color: var(--green);
+}
+
 .purple {
     color: var(--purple);
 }
 
+.bg_purple {
+    background-color: var(--purple);
+}
+
+.light-purple {
+    color: var(--light-purple);
+}
+
+.bg_light-purple {
+    background-color: var(--light-purple);
+}
+
 .white {
     color: var(--white);
+}
+
+.bg_white {
+    background-color: var(--white);
 }
 
 .t-center {
@@ -149,6 +184,7 @@ section {
 
 .start div {
     max-width: 50%;
+    min-width: 330px;
     margin: 0 0 15px 0;
 }
 
@@ -183,6 +219,14 @@ section {
     max-width: 700px;
 }
 
+.big {
+    width: 40%;
+}
+
+.bigest {
+    width: 30%;
+}
+
 .publish {
     display: flex;
     flex-direction: row;
@@ -200,7 +244,6 @@ section {
     min-width: 270px;
     max-width: 598px;
     gap: 10px;
-    background-color: var(--light-purple);
     border-radius: 75px;
     padding: 35px 35px 35px 35px;
     box-shadow: 
@@ -359,7 +402,7 @@ dialog {
     padding: 10px 0;
 }
 
-.grid-2 {
+.roles-2 {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -381,7 +424,61 @@ dialog {
     margin-bottom: 20px;
 }
 
+.grid-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 7px;
+    border-radius: 75px;
+    padding: 35px 35px 15px 35px;
+    gap: 10px;
+}
+
+.shadow_green {
+    box-shadow: 
+    7px 7px 6px var(--dark-green);
+}
+
+.shadow_orange {
+    box-shadow: 
+    7px 7px 6px var(--dark-orange);
+}
+
+.card-1_div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1400px;
+    border-radius: 40px;
+}
+
+.card-1_div div {
+    font-size: 24px;
+    padding: 50px;
+}
+
+.card-1_div_img {
+    width: 50%;
+    height: 50%;
+    max-width: 400px;
+    padding: 50px;
+}
+
+.card-button {
+    background-color: inherit;
+    border-radius: 20px;
+    border: none;
+}
+
+.our-artists {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -432,6 +529,12 @@ footer {
     width: 36px;
 }
 
+.roles-3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
 @media (max-width: 1275px) {
     .navigation {
         background-color: white;
@@ -552,5 +655,29 @@ footer {
         width: 75%;
         min-width: 330px;
         padding-top: 25px;
+    }
+    .card-1_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-1_div div {
+        font-size: 24px;
+        padding: 30px 30px 0 30px;
+    }
+    .card-1_div_img {
+        padding: 0 0 30px 0;
+    }
+}
+
+@media (max-width: 678px) {
+    .hidden-678 {
+        display: none;
+    }
+    .card-1_div div p {
+        font-size: 18px;
+    }
+    .card-1_div div h3 {
+        font-size: 24px;
     }
 }

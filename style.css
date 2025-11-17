@@ -546,6 +546,41 @@ footer {
     margin: 0 auto;
     flex-wrap: wrap;
 }
+
+/* test nav-list */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 8px 12px;
+  color: var(--green);
+  cursor: pointer;
+}
+
+/* Сам выпадающий список */
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  width: 100%;
+  pointer-events: none;
+  transform: translateY(5px);
+  transition: opacity .2s ease, transform .2s ease;
+  z-index: 1000;
+}
+
+/* Появление при наведении */
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
 @media (max-width: 1275px) {
     .navigation {
         background-color: white;

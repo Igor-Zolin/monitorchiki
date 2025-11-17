@@ -29,7 +29,6 @@ html:root {
     background-color: var(--orange);
 }
 
-
 .bg_white {
     background-color: var(--white);
 }
@@ -450,6 +449,11 @@ dialog {
     7px 7px 6px var(--dark-orange);
 }
 
+.shadow_purple {
+        box-shadow: 
+    7px 7px 6px var(--purple);
+}
+
 .card-1_div {
     display: flex;
     flex-direction: row;
@@ -468,6 +472,13 @@ dialog {
 .card-1_div_img {
     width: 50%;
     height: 50%;
+    max-width: 400px;
+    padding: 50px;
+}
+
+.card-1_div_img-purple {
+    width: 25%;
+    height: 25%;
     max-width: 400px;
     padding: 50px;
 }

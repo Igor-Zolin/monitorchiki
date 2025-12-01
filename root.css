@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html:root {
+    font-size: 16px;
+    --green: #8BC032;
+    --dark-green: #43832C;
+    --purple: #887BCB;
+    --light-purple: #BEB3F6;
+    --white: #FFFFFF;
+    --orange: #E77F40;
+    --dark-orange: #A44C17;
+    --blue: #5686E1;
+    --black: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.bg_orange {
+    background-color: var(--orange);
+}
+
+.bg_white {
+    background-color: var(--white);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.bg_blue {
+    background-color: var(--blue);
+}
+
+.green {
+    color: var(--green);
+}
+
+.bg_green {
+    background-color: var(--green);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.bg_purple {
+    background-color: var(--purple);
+}
+
+.light-purple {
+    color: var(--light-purple);
+}
+
+.bg_light-purple {
+    background-color: var(--light-purple);
+}
+
+.white {
+    color: var(--white);
+}
+
+.bg_white {
+    background-color: var(--white);
+}
+
+.t-center {
+    text-align: center;
+}
+
+.p-16 {
+    font-size: 1rem;
+}
+
+.p-20 {
+    font-size: 1.25rem;
+}
+
+.p-24 {
+    font-size: 1.5rem;
+}
+
+.p-26 {
+    font-size: 1.625rem;
+}
+
+.p-48 {
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--green);
+    padding: 15px 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    /* width: 40%; */
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+/* test nav-list */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  /* padding: 8px 12px; */
+  color: var(--green);
+  cursor: pointer;
+}
+
+/* Сам выпадающий список */
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  opacity: 0;
+  width: 100%;
+  pointer-events: none;
+  transform: translateY(5px);
+  transition: opacity .2s ease, transform .2s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Появление при наведении */
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.open{
+    display: flex !important;
+}
+
+.burger {
+    display: none;
+    position: relative;
+    z-index: 70;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 18px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.underline_none {
+    text-decoration: none;
+}
+
+.underline_hover {
+    text-decoration: underline;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 50px 0 50px 0;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-25{
+    margin-bottom: 25px
+}
+
+.mb-50{
+    margin-bottom: 50px
+}

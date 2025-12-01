@@ -7,22 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container header">
-            <div>
-                <h1 class="white">Мониторчики</h1>
-                <p class="p-16 white">Детское электронное издание</p>
-            </div>
-            <nav class="navigation">
-                <a class="p-48 white" href="./index.html">О нас</a>
-                <a class="p-48 white" href="./materials.html">Материалы</a>
-                <a class="p-48 white" href="./forParents.html">Для родителей</a>
-            </nav>
-            <div class="burger">
-                <span></span>
-            </div>
+  <header>
+    <div class="container header">
+        <div>
+            <h1 class="white">Мониторчики</h1>
+            <p class="p-16 white">Детское электронное издание</p>
         </div>
-    </header>
+        <nav class="navigation">
+            <div>
+                <a class="p-26 white" href="./index.html">О нас</a>
+            </div>
+            <div class="dropdown">
+                <a class="p-26 white" href="#">Полезные материалы</a>
+                <ul class="dropdown-list">
+                    <li><a href="forParents.html">Для родителей</a></li>
+                    <li><a href="materials.html">Для детей</a></li>
+                </ul>
+            </div>
+            <div>
+                <a class="p-26 white" href="./entertainment.html">Развлечения</a>
+            </div>
+        </nav>
+        <div class="burger">
+            <span></span>
+        </div>
+    </div>
+</header>
     <main class="container">
         <section class="start">
             <div>
@@ -36,12 +46,109 @@
                 <li class="card-1 bg_light-purple">
                     <div class="card-1_div bg_white">
                         <div>
-                            <h3 class="t-center orange">Название статьи</h3>
-                            <p>О чем статья кратко (не более 5 предложений)</p>
+                            <h3 class="purple">
+                                Цифровое детство. Первые шаги ребёнка в интернете и как их обезопасить
+                            </h3>
+                            <p>
+                                Кажется, ещё вчера ребёнок делал первые шаги, а сегодня уже листает
+                            ленту на телефоне. Интернет — огромный и любопытный мир, и задача
+                            родителей — сделать его максимально безопасным.
+                            </p>
+                            <p class="hidden-678">
+                                Разбираемся, как настроить родительский контроль, объяснить простые
+                                правила безопасности и изучать цифровой мир вместе с ребёнком.
+                            </p>
                         </div>
-                        <img class="card-1_div_img" src="./img/box1.png" alt="orange-mascot">
+                        <img class="card-1_div_img-purple" src="./img/purple-1.png" alt="" />
                     </div>
-                    <button id="openModalBtn6" class="card-button"><p class="p-24">Подробнее &#8594;</p></button>
+                    <a class="card-button" href="forPar-1.html"><p class="p-24">Подробнее &#8594;</p></a>
+                </li>
+
+                <li class="card-1 bg_light-purple">
+                  <div class="card-1_div bg_white">
+                    <div>
+                      <h3 class="purple">
+                        Не просто сидит в телефоне. Чем на самом деле занимается ваш ребёнок?
+                      </h3>
+                      <p>
+                        За экраном телефона скрывается целый мир: соцсети, игры, творчество и
+                        общение. Всё это влияет на самооценку, настроение и интересы ребёнка
+                        сильнее, чем кажется.
+                      </p>
+                      <p class="hidden-678">
+                        Рассказываем, как посмотреть на цифровую жизнь глазами ребёнка,
+                        проявить искренний интерес и обсудить безопасность без нотаций.
+                      </p>
+                    </div>
+                    <img class="card-1_div_img-purple" src="./img/purple-2.png" alt="" />
+                  </div>
+                  <a class="card-button" href="forPar-2.html"><p class="p-24">Подробнее &#8594;</p></a>
+                </li>
+
+                <li class="card-1 bg_light-purple">
+                  <div class="card-1_div bg_white">
+                    <div>
+                      <h3 class="purple">
+                        Угрозы для детей в интернете и как их определить родителям
+                      </h3>
+                      <p>
+                        Интернет — это не только игры и видео, но и риски: кибербуллинг,
+                        мошенничество, опасный контент и навязчивые знакомые. Важно вовремя
+                        заметить тревожные сигналы.
+                      </p>
+                      <p class="hidden-678">
+                        В статье разбираем основные онлайн-угрозы и даём простые шаги: от
+                        диалога с ребёнком до настроек родительского контроля и безопасного
+                        поиска.
+                      </p>
+                    </div>
+                    <img class="card-1_div_img-purple" src="./img/purple-card.png" alt="" />
+                  </div>
+                  <a class="card-button" href="forPar-3.html"><p class="p-24">Подробнее &#8594;</p></a>
+                </li>
+
+                <li class="card-1 bg_light-purple">
+                  <div class="card-1_div bg_white">
+                    <div>
+                      <h3 class="purple">
+                        Как научить ребёнка защищать свою приватность в цифровом мире?
+                      </h3>
+                      <p>
+                        Фото, геометки и посты складываются в цельную картину о жизни ребёнка.
+                        Поэтому важно с детства объяснить, что такое личная информация и как
+                        с ней обращаться.
+                      </p>
+                      <p class="hidden-678">
+                        Объясняем на простых примерах, что нельзя публиковать никогда, как
+                        настроить приватность в соцсетях и зачем нужны сложные пароли и
+                        двухфакторная защита.
+                      </p>
+                    </div>
+                    <img class="card-1_div_img-purple" src="./img/purple-header.png" alt="" />
+                  </div>
+                  <a class="card-button" href="forPar-4.html"><p class="p-24">Подробнее &#8594;</p></a>
+                </li>
+              <li class="card-1 bg_light-purple">
+                  <div class="card-1_div bg_white">
+                    <div>
+                      <h3 class="purple">
+                        Игровая зависимость. Как распознать и справиться с этой проблемой?
+                      </h3>
+                      <p>
+                        Когда игры и соцсети становятся главным интересом, а всё остальное
+                        отходит на второй план, родителям важно вовремя заметить первые
+                        признаки зависимости.
+                      </p>
+                      <p class="hidden-678">
+                        Рассказываем, какие «звонки» должны насторожить, как договариваться о
+                        времени за экраном, искать альтернативы и выстраивать здоровые
+                        цифровые привычки для всей семьи.
+                      </p>
+                    </div>
+                    <img class="card-1_div_img-purple" src="./img/purple-1.png" alt="" />
+                  </div>
+                  <a class="card-button" href="forPar-5.html"><p class="p-24">Подробнее &#8594;</p></a>
+                  <a href="">Подробнее</a>
                 </li>
             </ul>
         </section>

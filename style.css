@@ -301,8 +301,8 @@ dialog {
 }
 
 .card-1_div_img-purple {
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
     max-width: 400px;
     padding: 50px;
 }
@@ -392,6 +392,17 @@ footer {
     border-radius: 15px;
 }
 
+.mat-r {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 25px;
+}
+
+.mat-r-img {
+    width: 50%;
+}
 @media (max-width: 1275px) {
     .navigation {
         background-color: white;
@@ -536,5 +547,12 @@ footer {
     }
     .card-1_div div h3 {
         font-size: 24px;
+    }
+    .mat-r {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mat-r-img {
+        width: 70%;
     }
 }

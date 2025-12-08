@@ -114,6 +114,10 @@ p {
     padding: 5px 0;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .container {
     width: 90%;
     max-width: 1400px;

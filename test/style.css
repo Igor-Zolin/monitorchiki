@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.slider {
+  max-width: 800px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: sans-serif;
+}
+
+.slider-window {
+  overflow: hidden;
+  flex: 1; /* занимает всё доступное пространство между кнопками */
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  /* 3 штуки в строку */
+  flex: 0 0 calc(100% / 3);
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Кнопки */
+.slider-btn {
+  border: none;
+  background: #333;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.coloration-li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coloration-li-img {
+    width: 100%;
+    border: solid black 1px;
+    border-radius: 15px;
+}

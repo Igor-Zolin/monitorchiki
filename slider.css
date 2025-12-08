@@ -1,0 +1,45 @@
+.slider {
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: sans-serif;
+}
+
+.slider-window {
+  overflow: hidden;
+  flex: 1; /* занимает всё доступное пространство между кнопками */
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  /* 3 штуки в строку */
+  flex: 0 0 calc(100% / 3.3);
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Кнопки */
+.slider-btn {
+  border: none;
+  background: #333;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}

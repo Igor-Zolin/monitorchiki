@@ -43,3 +43,15 @@
   opacity: 0.4;
   cursor: default;
 }
+
+@media (max-width: 1275px) {
+  .slide {
+    flex: 0 0 calc(100% / 2.2);
+  } 
+}
+
+@media (max-width: 678px) {
+  .slide {
+    flex: 0 0 calc(100% / 1.1);
+  } 
+}

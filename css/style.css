@@ -384,6 +384,13 @@ footer {
     border-radius: 15px;
 }
 
+.material-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 0 0 0;
+}
+
 .mat-r {
     display: flex;
     flex-direction: row;
@@ -395,6 +402,7 @@ footer {
 .mat-r-img {
     width: 50%;
 }
+
 @media (max-width: 1275px) {
     .navigation {
         background-color: white;

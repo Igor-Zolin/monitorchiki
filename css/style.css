@@ -415,6 +415,23 @@ footer {
     width: 100%;
 }
 
+.lessons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 25px;
+    margin: 15px;
+}
+
+.lessons-h3 {
+    margin: 10px 0 20px 0;
+}
+
+.lessons-img {
+    width: 40%;
+}
+
 .material-links {
     display: flex;
     flex-direction: row;
@@ -585,5 +602,16 @@ footer {
     }
     .mat-r-img {
         width: 70%;
+    }
+    .games {
+        flex-wrap: wrap;
+    }
+    .lessons {
+        flex-wrap: wrap;
+
+    }
+    .lessons-img {
+        width: 100%;
+        /* margin: 25px 0 0 0; */
     }
 }

@@ -384,6 +384,37 @@ footer {
     border-radius: 15px;
 }
 
+.games-link {
+    color: var(--orange);
+    padding: 5px;
+    border-radius: 20px;
+    border: 3px solid var(--orange);
+    margin: 0 0 10px 0;
+}
+
+.games {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.games-text {
+    width: 80%;
+}
+
+.games-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.games-img {
+    width: 100%;
+}
+
 .material-links {
     display: flex;
     flex-direction: row;

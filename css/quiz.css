@@ -1,0 +1,242 @@
+/* ── Викторина: стили поверх style.css ── */
+
+        .quiz-hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .quiz-hero h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Панель прогресса */
+        .quiz-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .progress-track {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            height: 12px;
+            overflow: hidden;
+            margin-bottom: 28px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: var(--green);
+            border-radius: 10px;
+            transition: width 0.4s ease;
+        }
+
+        /* Карточка вопроса */
+        .question-card {
+            background-color: var(--white);
+            border-radius: 40px;
+            padding: 35px;
+            box-shadow: 7px 7px 6px var(--purple);
+            margin-bottom: 20px;
+        }
+
+        .question-category {
+            display: inline-block;
+            background-color: var(--light-purple);
+            color: var(--purple);
+            font-size: 0.875rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
+        .question-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 28px;
+            line-height: 1.4;
+        }
+
+        /* Сетка ответов */
+        .answers-grid {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .answer-btn {
+            flex: 1 1 calc(50% - 7px);
+            min-width: 220px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 16px 20px;
+            border: 3px solid #e0e0e0;
+            border-radius: 25px;
+            background-color: #f8f8f8;
+            color: var(--black);
+            cursor: pointer;
+            text-align: left;
+            line-height: 1.4;
+            transition: border-color 0.2s, background-color 0.2s, transform 0.15s;
+        }
+
+        .answer-btn:hover:not(:disabled) {
+            border-color: var(--blue);
+            background-color: #eef3fc;
+            transform: translateY(-2px);
+        }
+
+        .answer-btn.correct {
+            border-color: var(--green);
+            background-color: #f0fdf0;
+            color: var(--dark-green);
+        }
+
+        .answer-btn.wrong {
+            border-color: #e53935;
+            background-color: #fff5f5;
+            color: #b71c1c;
+        }
+
+        .answer-btn.show-correct {
+            border-color: var(--green);
+            background-color: #f0fdf0;
+            color: var(--dark-green);
+        }
+
+        /* Фидбек */
+        #feedback {
+            display: none;
+            margin-top: 20px;
+            padding: 16px 20px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        #feedback.correct {
+            background-color: #f0fdf0;
+            border: 2px solid var(--green);
+            color: var(--dark-green);
+        }
+
+        #feedback.wrong {
+            background-color: #fff5f5;
+            border: 2px solid #e53935;
+            color: #b71c1c;
+        }
+
+        #feedback-hint {
+            font-weight: normal;
+            font-size: 0.95rem;
+            margin-top: 6px;
+            color: #333;
+        }
+
+        /* Кнопка «Далее» */
+        #next-btn {
+            display: none;
+            margin-top: 20px;
+            width: 100%;
+            padding: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.25rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            background-color: var(--orange);
+            color: var(--white);
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.15s;
+            box-shadow: 4px 4px 0 var(--dark-orange);
+        }
+
+        #next-btn:hover {
+            background-color: var(--dark-orange);
+            transform: translateY(-2px);
+        }
+
+        /* Экран результата */
+        #result-screen {
+            display: none;
+        }
+
+        .result-card {
+            background-color: var(--white);
+            border-radius: 75px;
+            padding: 50px 40px;
+            box-shadow: 7px 7px 6px var(--purple);
+            text-align: center;
+        }
+
+        .result-emoji {
+            font-size: 5rem;
+            margin-bottom: 16px;
+        }
+
+        .result-score-big {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: var(--orange);
+            line-height: 1;
+            margin: 16px 0;
+        }
+
+        .result-score-big span {
+            font-size: 1.8rem;
+            color: #888;
+        }
+
+        .result-msg {
+            font-size: 1.15rem;
+            color: #444;
+            margin: 16px 0 30px;
+            line-height: 1.6;
+        }
+
+        #retry-btn {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.25rem;
+            font-weight: bold;
+            padding: 14px 40px;
+            border: none;
+            border-radius: 25px;
+            background-color: var(--green);
+            color: var(--white);
+            cursor: pointer;
+            box-shadow: 4px 4px 0 var(--dark-green);
+            transition: background-color 0.2s, transform 0.15s;
+        }
+
+        #retry-btn:hover {
+            background-color: var(--dark-green);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 678px) {
+            .answer-btn {
+                flex: 1 1 100%;
+            }
+            .question-text {
+                font-size: 1.2rem;
+            }
+            .result-score-big {
+                font-size: 2.5rem;
+            }
+            .result-card {
+                border-radius: 40px;
+                padding: 35px 25px;
+            }
+        }

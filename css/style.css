@@ -384,9 +384,15 @@ footer {
     border-radius: 15px;
 }
 
+.games-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .games-link {
     color: var(--orange);
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
     border: 3px solid var(--orange);
     margin: 0 0 10px 0;
@@ -397,6 +403,7 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
     gap: 25px;
     margin: 25px 0;
 }
@@ -409,6 +416,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 15%;
 }
 
 .games-img {
@@ -421,7 +429,7 @@ footer {
     flex-wrap: nowrap;
     justify-content: space-between;
     gap: 25px;
-    margin: 15px;
+    margin: 15px 0;
 }
 
 .lessons-h3 {
@@ -584,6 +592,9 @@ footer {
     .card-1_div_img {
         padding: 0 0 30px 0;
     }
+    .games-links {
+        width: 40%;
+    }
 }
 
 @media (max-width: 678px) {
@@ -605,6 +616,9 @@ footer {
     }
     .games {
         flex-wrap: wrap;
+    }
+    .games-links {
+        width: 60%;
     }
     .lessons {
         flex-wrap: wrap;

@@ -21,6 +21,10 @@ html:root {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.black {
+    color: var(--black)
+}
+
 .orange {
     color: var(--orange);
 }

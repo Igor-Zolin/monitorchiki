@@ -1,16 +1,10 @@
-
 const ALL_QUESTIONS = [
   {
     category: "Пароли",
     text: "Какой пароль считается самым надёжным?",
-    answers: [
-      "1234567890",
-      "мояфамилия2010",
-      "G7#kL!p2qX@9",
-      "qwerty"
-    ],
+    answers: ["1234567890", "мояфамилия2010", "G7#kL!p2qX@9", "qwerty"],
     correct: 2,
-    hint: "Надёжный пароль содержит буквы разного регистра, цифры и символы — и длиннее 8 знаков!"
+    hint: "Надёжный пароль содержит буквы разного регистра, цифры и символы — и длиннее 8 знаков!",
   },
   {
     category: "Пароли",
@@ -19,10 +13,10 @@ const ALL_QUESTIONS = [
       "Да, так удобнее запоминать",
       "Нет — если взломают один сайт, пострадают все",
       "Только если пароль очень длинный",
-      "Можно, если менять его раз в год"
+      "Можно, если менять его раз в год",
     ],
     correct: 1,
-    hint: "Для каждого сайта нужен отдельный пароль. Используй менеджер паролей, чтобы не запоминать их все!"
+    hint: "Для каждого сайта нужен отдельный пароль. Используй менеджер паролей, чтобы не запоминать их все!",
   },
   {
     category: "Личные данные",
@@ -31,10 +25,10 @@ const ALL_QUESTIONS = [
       "Фото домашнего питомца",
       "Любимую книгу",
       "Домашний адрес и номер телефона",
-      "Рисунок, который ты нарисовал"
+      "Рисунок, который ты нарисовал",
     ],
     correct: 2,
-    hint: "Домашний адрес, телефон и личные данные нельзя публиковать — незнакомцы могут ими воспользоваться!"
+    hint: "Домашний адрес, телефон и личные данные нельзя публиковать — незнакомцы могут ими воспользоваться!",
   },
   {
     category: "Интернет-угрозы",
@@ -43,10 +37,10 @@ const ALL_QUESTIONS = [
       "Отправить, если он кажется добрым",
       "Рассказать родителям или учителю",
       "Согласиться, если он обещает подарок",
-      "Ответить и спросить зачем"
+      "Ответить и спросить зачем",
     ],
     correct: 1,
-    hint: "Никогда не отправляй фото незнакомцам! Всегда рассказывай взрослым о подозрительных сообщениях."
+    hint: "Никогда не отправляй фото незнакомцам! Всегда рассказывай взрослым о подозрительных сообщениях.",
   },
   {
     category: "Фишинг",
@@ -55,10 +49,10 @@ const ALL_QUESTIONS = [
       "Настоящий приз — нужно спешить",
       "Рассылка от магазина",
       "Фишинговое мошенничество",
-      "Опрос от школы"
+      "Опрос от школы",
     ],
     correct: 2,
-    hint: "Это фишинг! Мошенники обещают призы, чтобы украсть данные. Никогда не вводи данные карты по ссылке из письма."
+    hint: "Это фишинг! Мошенники обещают призы, чтобы украсть данные. Никогда не вводи данные карты по ссылке из письма.",
   },
   {
     category: "Фишинг",
@@ -67,10 +61,10 @@ const ALL_QUESTIONS = [
       "По красивому дизайну",
       "Проверить адрес сайта и значок замка в браузере",
       "Если сайт быстро загружается — он настоящий",
-      "По количеству рекламы"
+      "По количеству рекламы",
     ],
     correct: 1,
-    hint: "Проверяй адрес: bank.ru — настоящий, bank-online.xyz — подозрительный. Замочек (https) тоже важен!"
+    hint: "Проверяй адрес: bank.ru — настоящий, bank-online.xyz — подозрительный. Замочек (https) тоже важен!",
   },
   {
     category: "Вирусы",
@@ -79,10 +73,10 @@ const ALL_QUESTIONS = [
       "Сразу открыть — друг же прислал",
       "Открыть, если антивирус молчит",
       "Проверить антивирусом и спросить у взрослых перед открытием",
-      "Отправить всем контактам"
+      "Отправить всем контактам",
     ],
     correct: 2,
-    hint: "Файлы .exe могут содержать вирусы. Всегда проверяй антивирусом и советуйся со взрослыми!"
+    hint: "Файлы .exe могут содержать вирусы. Всегда проверяй антивирусом и советуйся со взрослыми!",
   },
   {
     category: "Вирусы",
@@ -91,10 +85,10 @@ const ALL_QUESTIONS = [
       "Ускоряет интернет",
       "Удаляет ненужные файлы",
       "Защищает компьютер от вредоносных программ",
-      "Блокирует все сайты"
+      "Блокирует все сайты",
     ],
     correct: 2,
-    hint: "Антивирус ищет и нейтрализует вредоносные программы, которые могут повредить компьютер или украсть данные."
+    hint: "Антивирус ищет и нейтрализует вредоносные программы, которые могут повредить компьютер или украсть данные.",
   },
   {
     category: "Общение онлайн",
@@ -103,10 +97,10 @@ const ALL_QUESTIONS = [
       "Согласиться — мы уже хорошо общаемся",
       "Встретиться в людном месте",
       "Рассказать родителям и никуда не идти без их согласия",
-      "Прийти с другом"
+      "Прийти с другом",
     ],
     correct: 2,
-    hint: "Никогда не встречайся с интернет-знакомыми без разрешения родителей! Люди в сети могут быть не теми, за кого себя выдают."
+    hint: "Никогда не встречайся с интернет-знакомыми без разрешения родителей! Люди в сети могут быть не теми, за кого себя выдают.",
   },
   {
     category: "Двухфакторная аутентификация",
@@ -115,10 +109,10 @@ const ALL_QUESTIONS = [
       "Два разных пароля для одного сайта",
       "Подтверждение входа через пароль и SMS-код",
       "Вход с двух устройств одновременно",
-      "Смена пароля каждые два дня"
+      "Смена пароля каждые два дня",
     ],
     correct: 1,
-    hint: "2FA — это дополнительная защита: даже если злоумышленник узнал пароль, без SMS-кода он не войдёт!"
+    hint: "2FA — это дополнительная защита: даже если злоумышленник узнал пароль, без SMS-кода он не войдёт!",
   },
   {
     category: "Wi-Fi",
@@ -127,10 +121,10 @@ const ALL_QUESTIONS = [
       "Нет, Wi-Fi везде одинаковый",
       "Да — мошенники могут перехватить данные",
       "Только если Wi-Fi без пароля",
-      "Нет, если у тебя есть антивирус"
+      "Нет, если у тебя есть антивирус",
     ],
     correct: 1,
-    hint: "В публичных сетях данные могут перехватить. Для платежей используй мобильный интернет или домашний Wi-Fi."
+    hint: "В публичных сетях данные могут перехватить. Для платежей используй мобильный интернет или домашний Wi-Fi.",
   },
   {
     category: "Личные данные",
@@ -139,20 +133,18 @@ const ALL_QUESTIONS = [
       "Настоящее имя, фамилию и дату рождения",
       "Никнейм и возраст (только год)",
       "Домашний адрес для доставки",
-      "Номер школы и класс"
+      "Номер школы и класс",
     ],
     correct: 1,
-    hint: "Для регистрации достаточно никнейма. Чем меньше реальных данных — тем безопаснее!"
-  }
+    hint: "Для регистрации достаточно никнейма. Чем меньше реальных данных — тем безопаснее!",
+  },
 ];
-
 
 //  Состояние викторины
 let questions = [];
 let curri = 0;
 let score = 0;
 let answered = false;
-
 
 //  Запуск
 function initQuiz() {
@@ -161,101 +153,105 @@ function initQuiz() {
   score = 0;
   answered = false;
 
-  document.getElementById('q-total').textContent = questions.length;
-  document.getElementById('final-total').textContent = questions.length;
-  document.getElementById('quiz-screen').style.display = 'block';
-  document.getElementById('result-screen').style.display = 'none';
+  document.getElementById("q-total").textContent = questions.length;
+  document.getElementById("final-total").textContent = questions.length;
+  document.getElementById("quiz-screen").style.display = "block";
+  document.getElementById("result-screen").style.display = "none";
 
   renderQuestion();
 }
-
 
 function renderQuestion() {
   const q = questions[curri];
   answered = false;
 
   // Счётчик и прогресс
-  document.getElementById('q-num').textContent = curri + 1;
-  document.getElementById('score-now').textContent = score;
+  document.getElementById("q-num").textContent = curri + 1;
+  document.getElementById("score-now").textContent = score;
   const pct = (curri / questions.length) * 100;
-  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById("progress-fill").style.width = pct + "%";
 
   // Категория и текст
-  document.getElementById('q-category').textContent = q.category;
-  document.getElementById('q-text').textContent = q.text;
+  document.getElementById("q-category").textContent = q.category;
+  document.getElementById("q-text").textContent = q.text;
 
   // Анимация карточки
-  const card = document.getElementById('question-card');
-  card.style.animation = 'none';
+  const card = document.getElementById("question-card");
+  card.style.animation = "none";
   void card.offsetWidth; // reflow
-  card.style.animation = 'slideIn 0.4s ease';
+  card.style.animation = "slideIn 0.4s ease";
 
   // Варианты ответов (перемешанные индексы)
-  const grid = document.getElementById('answers-grid');
-  grid.innerHTML = '';
+  const grid = document.getElementById("answers-grid");
+  grid.innerHTML = "";
 
   const shuffledIndexes = shuffleIndexes(q.answers.length);
   shuffledIndexes.forEach((origIdx) => {
-    const btn = document.createElement('button');
-    btn.className = 'answer-btn';
+    const btn = document.createElement("button");
+    btn.className = "answer-btn";
     btn.textContent = q.answers[origIdx];
     btn.dataset.index = origIdx;
-    btn.addEventListener('click', () => handleAnswer(btn, origIdx, q.correct, q.hint));
+    btn.addEventListener("click", () =>
+      handleAnswer(btn, origIdx, q.correct, q.hint),
+    );
     grid.appendChild(btn);
   });
 
   // Скрыть фидбек и кнопку «далее»
-  const fb = document.getElementById('feedback');
-  fb.style.display = 'none';
-  fb.className = '';
-  document.getElementById('next-btn').style.display = 'none';
+  const fb = document.getElementById("feedback");
+  fb.style.display = "none";
+  fb.className = "";
+  document.getElementById("next-btn").style.display = "none";
 }
-
 
 function handleAnswer(btn, selectedIdx, correctIdx, hint) {
   if (answered) return;
   answered = true;
 
-  const buttons = document.querySelectorAll('.answer-btn');
-  buttons.forEach(b => b.disabled = true);
+  const buttons = document.querySelectorAll(".answer-btn");
+  buttons.forEach((b) => (b.disabled = true));
 
   const isCorrect = selectedIdx === correctIdx;
 
   if (isCorrect) {
-    btn.classList.add('correct');
+    btn.classList.add("correct");
     score++;
     showFeedback(true, hint);
   } else {
-    btn.classList.add('wrong');
+    btn.classList.add("wrong");
     // Подсветить правильный
-    buttons.forEach(b => {
+    buttons.forEach((b) => {
       if (parseInt(b.dataset.index) === correctIdx) {
-        b.classList.add('show-correct');
+        b.classList.add("show-correct");
       }
     });
     showFeedback(false, hint);
   }
 
-  document.getElementById('score-now').textContent = score;
+  document.getElementById("score-now").textContent = score;
 
-  const nextBtn = document.getElementById('next-btn');
-  nextBtn.style.display = 'block';
-  nextBtn.textContent = curri + 1 < questions.length ? 'Следующий вопрос →' : 'Посмотреть результат 🎉';
+  const nextBtn = document.getElementById("next-btn");
+  nextBtn.style.display = "block";
+  nextBtn.textContent =
+    curri + 1 < questions.length
+      ? "Следующий вопрос →"
+      : "Посмотреть результат 🎉";
   nextBtn.onclick = nextQuestion;
 }
 
 function showFeedback(isCorrect, hint) {
-  const fb = document.getElementById('feedback');
-  fb.style.display = 'block';
-  fb.className = isCorrect ? 'correct' : 'wrong';
+  const fb = document.getElementById("feedback");
+  fb.style.display = "block";
+  fb.className = isCorrect ? "correct" : "wrong";
 
-  document.getElementById('feedback-icon').textContent = isCorrect ? '✅ ' : '❌ ';
-  document.getElementById('feedback-text').textContent = isCorrect
-    ? 'Правильно! Отличная работа!'
-    : 'Неправильно. Не расстраивайся!';
-  document.getElementById('feedback-hint').textContent = '💡 ' + hint;
+  document.getElementById("feedback-icon").textContent = isCorrect
+    ? "✅ "
+    : "❌ ";
+  document.getElementById("feedback-text").textContent = isCorrect
+    ? "Правильно! Отличная работа!"
+    : "Неправильно. Не расстраивайся!";
+  document.getElementById("feedback-hint").textContent = "💡 " + hint;
 }
-
 
 function nextQuestion() {
   curri++;
@@ -266,44 +262,46 @@ function nextQuestion() {
   }
 }
 
-
 function showResult() {
-  document.getElementById('quiz-screen').style.display = 'none';
-  const resultScreen = document.getElementById('result-screen');
-  resultScreen.style.display = 'block';
+  document.getElementById("quiz-screen").style.display = "none";
+  const resultScreen = document.getElementById("result-screen");
+  resultScreen.style.display = "block";
 
   const total = questions.length;
   const pct = score / total;
 
-  document.getElementById('final-score').textContent = score;
-  document.getElementById('progress-fill').style.width = '100%';
+  document.getElementById("final-score").textContent = score;
+  document.getElementById("progress-fill").style.width = "100%";
 
   let emoji, title, stars, msg;
 
   if (pct >= 0.9) {
-    emoji = '🏆'; title = 'Супергерой безопасности!';
-    stars = '⭐⭐⭐';
+    emoji = "🏆";
+    title = "Супергерой безопасности!";
+    stars = "⭐⭐⭐";
     msg = `Ты настоящий эксперт по кибербезопасности! ${score} из ${total} — невероятный результат. Ты точно защитишь себя в интернете!`;
   } else if (pct >= 0.7) {
-    emoji = '😎'; title = 'Очень хорошо!';
-    stars = '⭐⭐';
+    emoji = "😎";
+    title = "Очень хорошо!";
+    stars = "⭐⭐";
     msg = `${score} из ${total} — отличный результат! Ты многое знаешь о безопасности. Повтори пропущенные темы и станешь настоящим экспертом!`;
   } else if (pct >= 0.5) {
-    emoji = '🙂'; title = 'Неплохо!';
-    stars = '⭐';
+    emoji = "🙂";
+    title = "Неплохо!";
+    stars = "⭐";
     msg = `${score} из ${total} — хорошее начало! Почитай наши материалы о кибербезопасности и попробуй ещё раз.`;
   } else {
-    emoji = '💪'; title = 'Учиться никогда не поздно!';
-    stars = '🌱';
+    emoji = "💪";
+    title = "Учиться никогда не поздно!";
+    stars = "🌱";
     msg = `${score} из ${total}. Не расстраивайся — загляни в раздел «Для детей» и узнай больше о безопасности в интернете. Потом попробуй снова!`;
   }
 
-  document.getElementById('result-emoji').textContent = emoji;
-  document.getElementById('result-title').textContent = title;
-  document.getElementById('result-stars').textContent = stars;
-  document.getElementById('result-msg').textContent = msg;
+  document.getElementById("result-emoji").textContent = emoji;
+  document.getElementById("result-title").textContent = title;
+  document.getElementById("result-stars").textContent = stars;
+  document.getElementById("result-msg").textContent = msg;
 }
-
 
 //  Перезапуск (доступна глобально для onclick)
 function restartQuiz() {
@@ -326,4 +324,4 @@ function shuffleIndexes(n) {
 }
 
 //  Старт при загрузке страницы
-document.addEventListener('DOMContentLoaded', initQuiz);
+document.addEventListener("DOMContentLoaded", initQuiz);

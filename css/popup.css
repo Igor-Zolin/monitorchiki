@@ -1,0 +1,180 @@
+/* ================================================
+   Мониторчики — Popup-уведомления
+   Подключить: <link rel="stylesheet" href="./css/popup.css">
+   ================================================ */
+
+/* Контейнер для всех уведомлений */
+#popup-container {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-end;
+    pointer-events: none; /* не блокирует клики на странице */
+}
+
+/* Одно уведомление */
+.popup-toast {
+    pointer-events: all;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    min-width: 280px;
+    max-width: 360px;
+    background-color: var(--white);
+    border-radius: 25px;
+    padding: 18px 20px;
+    box-shadow: 5px 5px 0 var(--purple);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #222;
+    cursor: default;
+
+    /* ── Место для анимации появления ── */
+    /* Сейчас: простое fade + slide.
+       В будущем замените блок ниже на свою keyframe-анимацию. */
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+/* Состояние «видим» — добавляется через JS */
+.popup-toast.popup-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Состояние «уходит» — добавляется через JS перед удалением */
+.popup-toast.popup-hiding {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Иконка-эмодзи слева */
+.popup-icon {
+    font-size: 1.8rem;
+    line-height: 1;
+    flex-shrink: 0;
+    /* ── Место для анимации иконки ── */
+    /* Например: animation: popupIconBounce 0.5s ease; */
+}
+
+/* Текстовая часть */
+.popup-body {
+    flex: 1;
+}
+
+.popup-label {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+.popup-text {
+    font-size: 0.95rem;
+    padding: 0; /* сброс глобального p { padding: 5px 0 } */
+    margin: 0;
+}
+
+/* Кнопка закрытия */
+.popup-close {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+    color: #888;
+    flex-shrink: 0;
+    transition: color 0.15s;
+}
+.popup-close:hover {
+    color: #333;
+}
+
+/* ── Цветовые темы (совпадают с палитрой проекта) ── */
+
+.popup-toast.theme-green {
+    box-shadow: 5px 5px 0 var(--dark-green);
+}
+.popup-toast.theme-green .popup-label {
+    color: var(--dark-green);
+}
+
+.popup-toast.theme-orange {
+    box-shadow: 5px 5px 0 var(--dark-orange);
+}
+.popup-toast.theme-orange .popup-label {
+    color: var(--dark-orange);
+}
+
+.popup-toast.theme-blue {
+    box-shadow: 5px 5px 0 var(--blue);
+}
+.popup-toast.theme-blue .popup-label {
+    color: var(--blue);
+}
+
+.popup-toast.theme-purple {
+    box-shadow: 5px 5px 0 var(--purple);
+}
+.popup-toast.theme-purple .popup-label {
+    color: var(--purple);
+}
+
+/* ── Прогресс-бар автозакрытия ── */
+.popup-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 0 0 25px 25px;
+    width: 100%;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+.popup-progress-fill {
+    height: 100%;
+    width: 100%;
+    border-radius: 0 0 25px 25px;
+    /* ── Место для анимации прогресс-бара ──
+       Длительность задаётся через JS: style="animation-duration: Xs" */
+    animation: popupProgressShrink linear forwards;
+}
+
+@keyframes popupProgressShrink {
+    from { width: 100%; }
+    to   { width: 0%; }
+}
+
+.popup-toast.theme-green  .popup-progress-fill { background-color: var(--green); }
+.popup-toast.theme-orange .popup-progress-fill { background-color: var(--orange); }
+.popup-toast.theme-blue   .popup-progress-fill { background-color: var(--blue); }
+.popup-toast.theme-purple .popup-progress-fill { background-color: var(--purple); }
+
+/* position: relative нужен для прогресс-бара */
+.popup-toast {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ── Адаптив ── */
+@media (max-width: 678px) {
+    #popup-container {
+        bottom: 16px;
+        right: 12px;
+        left: 12px;
+        align-items: stretch;
+    }
+    .popup-toast {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+}

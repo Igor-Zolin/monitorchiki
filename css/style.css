@@ -72,7 +72,7 @@
     max-width: 598px;
     gap: 10px;
     border-radius: 75px;
-    padding: 35px 35px 35px 35px;
+    padding: 35px 35px 17px 35px;
     box-shadow: 
     7px 7px 6px var(--purple);
 }
@@ -384,15 +384,9 @@ footer {
     border-radius: 15px;
 }
 
-.games-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 .games-link {
     color: var(--orange);
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px;
     border: 3px solid var(--orange);
     margin: 0 0 10px 0;
@@ -403,7 +397,6 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
     gap: 25px;
     margin: 25px 0;
 }
@@ -416,7 +409,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 15%;
 }
 
 .games-img {
@@ -429,7 +421,7 @@ footer {
     flex-wrap: nowrap;
     justify-content: space-between;
     gap: 25px;
-    margin: 15px 0;
+    margin: 15px;
 }
 
 .lessons-h3 {
@@ -459,9 +451,119 @@ footer {
     width: 50%;
 }
 
+.TgPosts{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.TgPosts div{
+    padding: 0;
+}
+
+.ConVkPosts{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.ConVkPosts div{
+    padding: 0;
+}
+
+.VkPosts{
+    width: 55%;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/* Список */
+.social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Универсальная карточка */
+.social-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    padding: 35px;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Цветовые модификаторы */
+.social-card--orange {
+    background: var(--orange);
+    box-shadow: 7px 7px 6px var(--dark-orange);
+}
+
+.social-card--green {
+    background: var(--green);
+    box-shadow: 7px 7px 6px var(--dark-green);
+}
+
+.social-card--purple {
+    background: var(--purple);
+    box-shadow: 7px 7px 6px var(--dark-purple);
+}
+
+/* Внутренний контейнер */
+.social-card__body {
+        display: flex;
+    justify-content: center;    
+    background: white;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+/* Контейнер виджета */
+.social-card__widget {
+    width: 66%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Кнопка */
+.social-card__button {
+    align-self: flex-end;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main-social-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-social-list_left{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-list{
+    width: 650px;
+    padding: 0px 50px 0px 80px;
+}
+
 @media (max-width: 1275px) {
+    .spesical {
+        color: var(--orange) ;
+    }
+
     .navigation {
         background-color: white;
+        color: #B49AE1;
         display: none;
         flex-direction: column;
         position: fixed;
@@ -592,9 +694,6 @@ footer {
     .card-1_div_img {
         padding: 0 0 30px 0;
     }
-    .games-links {
-        width: 40%;
-    }
 }
 
 @media (max-width: 678px) {
@@ -616,9 +715,6 @@ footer {
     }
     .games {
         flex-wrap: wrap;
-    }
-    .games-links {
-        width: 60%;
     }
     .lessons {
         flex-wrap: wrap;

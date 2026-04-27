@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мониторчики</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/quiz.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap" rel="stylesheet">
@@ -40,11 +41,47 @@
         <section class="start">
             <div>
                 <h2 class="orange">Играй и узнавай новое</h2>
-                <p class="p-24 green">Здесь ты найдёшь раскраски и игры, которые не только помогут весело провести время, но и освоить интернет-грамотность</p>
+                <p class="p-24 green">Здесь ты найдёшь викторину, раскраски и игры, которые не только помогут весело провести время, но и освоить интернет-грамотность</p>
             </div>
             <video class="head-img big" preload="metadata" loop autoplay muted playsinline poster="">
                 <source src="./video/orange_music.mp4" type="video/webm">
             </video>
+        </section>
+        <section class="quiz-hero">
+            <h2 class="orange">Викторина по безопасности 🛡️</h2>
+            <p class="p-24 green">Проверь свои знания об интернет-безопасности!</p>
+        </section>
+        <section>
+            <div class="quiz-meta">
+                <span class="green">Вопрос <span id="q-num">1</span> из <span id="q-total">10</span></span>
+                <span class="orange bold">Очки: <span id="score-now">0</span></span>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+            </div>
+            <div id="quiz-screen">
+                <div class="question-card" id="question-card">
+                    <div class="question-category" id="q-category">Категория</div>
+                    <div class="question-text" id="q-text">Текст вопроса...</div>
+                    <div class="answers-grid" id="answers-grid"></div>
+                    <div id="feedback">
+                        <span id="feedback-icon"></span><span id="feedback-text"></span>
+                        <div id="feedback-hint"></div>
+                    </div>
+                    <button id="next-btn">Следующий вопрос →</button>
+                </div>
+            </div>
+            <div id="result-screen">
+                <div class="result-card">
+                    <div class="result-emoji" id="result-emoji">🏆</div>
+                    <h2 class="purple" id="result-title">Молодец!</h2>
+                    <div class="result-score-big">
+                        <span id="final-score">0</span><span> / <span id="final-total">10</span></span>
+                    </div>
+                    <p class="result-msg" id="result-msg">Отличный результат!</p>
+                    <button id="retry-btn" onclick="restartQuiz()">🔄 Пройти ещё раз</button>
+                </div>
+            </div>
         </section>
         <section>
             <h2>Раскраски</h2>
@@ -183,6 +220,7 @@
     </footer>
 
     <script src="./script.js"></script>
+    <script src="./quiz.min.js"></script>
     <script src="./slider.js"></script>
 </body>
 </html> 

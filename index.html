@@ -10,10 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+     <header>
         <div class="container header">
             <div>
-                <h1 class="white" style="margin-bottom: 5px">Мониторчики</h1>
+                <h1 class="white">Мониторчики</h1>
                 <p class="p-16 white">Детское электронное издание</p>
             </div>
             <nav class="navigation">
@@ -138,15 +138,77 @@
         </section>
         <section id="contacts" class="contacts">
             <h2 class="t-center orange mb-25">Ещё больше интересных материалов в наших социальных сетях!</h2>
-            <p class="t-center p-24 green mb-25">В наших социальных сетях вы найдёте много видео, клипов и постов о том, как правильно вести себя в интернет пространстве. Мы за безопасный интернет! </p>
+            
 
-            <div class="socials footer-div">
-                <a class="blue-a blue" href="https://vk.com/izdaniemonitorchiki"><img class="blue-icons" src="./img/VK-Negative-blue.svg" alt="vk-image">Вконтакте</a>
-                <a class="blue-a blue" href="https://t.me/izdaniemonitochiki"><img class="blue-icons" src="./img/Telegram-Negative-blue.svg" alt="tg-image">Телеграм</a>
+            <div class="main-social-list">
+                <div class="main-social-list_left">
+
+                    <p class="t-center p-24 green mb-25">В наших социальных сетях вы найдёте много видео, клипов и постов о том, как правильно вести себя в интернет пространстве. Мы за безопасный интернет! </p>
+
+                     <div class="socials footer-div">
+                    <a class="blue-a blue" href="https://vk.com/izdaniemonitorchiki"><img class="blue-icons" src="./img/VK-Negative-blue.svg" alt="vk-image">Вконтакте</a>
+                    <a class="blue-a blue" href="https://t.me/izdaniemonitochiki"><img class="blue-icons" src="./img/Telegram-Negative-blue.svg" alt="tg-image">Телеграм</a>
+                    </div>
+                        <img class="green-orange" src="./img/subscribe.png" alt="">
+                        <img class="subscribe" src="./img/subscribe.png" alt="">
+                </div>
+       
+
+
+            
+            <script src="https://vk.com/js/api/openapi.js?169" defer></script>
+                
+            <!-- VK API подключаем ОДИН раз в <head> -->
+                <script src="https://vk.com/js/api/openapi.js?169" defer></script>
+
+                <ul class="social-list">
+
+                    <!-- Telegram -->
+                    <!-- <li class="social-card social-card--orange">
+                        <div class="social-card__body">
+                            <div class="social-card__widget">
+                                    <script async src="https://telegram.org/js/telegram-widget.js?22"
+                                    data-telegram-post="izdaniemonitochiki/384"
+                                    data-width="100%">
+                            </script>
+                                </script>
+                            </div>
+                        </div>
+
+                        <a class="social-card__button" href="./forkids/material-1.html">
+                            Подробнее →
+                        </a>
+                    </li> -->
+
+                    <!-- VK -->
+  
+                        <div class="social-card__body">
+                            <div class="social-card__widget">
+                                                      <script
+                                        type="text/javascript"
+                                        src="https://vk.com/js/api/openapi.js?168"
+                                        charset="windows-1251"
+                                        ></script>
+                                        
+                                        <!-- Put this script tag to the place, where the Post block will be -->
+                                        <div id='vk_post_-217330187_173'></div>
+                                        <script type="text/javascript">
+                                            VK.Widgets.Post('vk_post_-217330187_173', -217330187, 173, 'uAWm9hL9_bBAgrRrmkekzz0zMkLB');
+                                        </script>
+                            </div>
+                        </div>
+
+                </ul>
+
+                <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    if (window.VK) {
+                        VK.Widgets.Post("vk_post", -217330187, 173, "HASH");
+                    }
+                });
+                </script>
             </div>
 
-            <img class="green-orange" src="./img/green-orange.png" alt="">
-            <img class="subscribe" src="./img/subscribe.png" alt="">
         </section>
         <section id="about">
             <h2 class="purple">О нас</h2>
@@ -157,29 +219,35 @@
             <div class="roles-3">
                 <div class="flex-r">
                     <ul class="p-16">
-                        <li><p>Бачурина Дарья Дмитриевна</p></li>
-                        <li><p>Бельтюкова Алёна Андреевна</p></li>
-                        <li><p>Данилов Тимофей Павлович</p></li>
-                        <li><p>Демидова Алёна Денисовна</p></li>
-                        <li><p>Депланьи Виктория Дмитриевна</p></li>
-                        <li><p>Дибров Кирилл Владиславович</p></li>
-                        <li><p>Лесовицкая Алёна Дмитриевна</p></li>
-                        <li><p>Лосева Екатерина Андреевна</p></li>
-                        <li><p>Никольская Алиса Дмитриевна</p></li>
-                        <li><p>Подколзин Виталий Юрьевич</p></li>
-                        <li><p>Югай Елизавета Александровна</p></li>
+                        <li><p>Аллабергенов Алимардон</p></li>
+                        <li><p>Бачурина Дарья</p></li>
+                        <li><p>Бельтюкова Алёна</p></li>
+                        <li><p>Бердиев Мухаммад</p></li>
+                        <li><p>Борисова Александра</p></li>
+                        <li><p>Данилов Тимофей</p></li>
+                        <li><p>Демидова Алёна</p></li>
+                        <li><p>Депланьи Виктория</p></li>
+                        <li><p>Дибров Кирилл</p></li>
+                        <li><p>Елтышев Сергей</p></li>
+                        <li><p>Иудин Андрей</p></li>
+                        <li><p>Кабанова Полина</p></li>
+                        <li><p>Козенков Даниил</p></li>
                     </ul>
                     <ul class="p-16">
+                        <li><p>Королёв Дмитрий</p></li>
+                        <li><p>Лаштабега Никита</p></li>
+                        <li><p>Лесовицкая Алёна</p></li>
+                        <li><p>Лосева Екатерина</p></li>
+                        <li><p>Никольская Алиса</p></li>
+                        <li><p>Павлов Дмитрий</p></li>
+                        <li><p>Панов Никита</p></li>
+                        <li><p>Подколзин Виталий</p></li>
+                        <li><p>Подсекин Тигран</p></li>
+                        <li><p>Пулин Дмитрий</p></li>
+                        <li><p>Хайницкая Варвара</p></li>
+                        <li><p>Шарикова Виктория</p></li>
+                        <li><p>Югай Елизавета</p></li>
                         <li><p>Язмырадова Айнур</p></li>
-                        <li><p>Козенков Даниил Алексеевич</p></li>
-                        <li><p>Борисова Александра Ивановна</p></li>
-                        <li><p>Павлов Дмитрий Михайлович</p></li>
-                        <li><p>Кабанова Полина Викторовна</p></li>
-                        <li><p>Хайницкая Варвара Андреевна</p></li>
-                        <li><p>Лаштабега Никита Валерьевич</p></li>
-                        <li><p>Иудин Андрей Дмитриевич</p></li>
-                        <li><p>Пулин Дмитрий Никитич</p></li>
-                        <li><p>Шарикова Виктория Вадимовна</p></li>
                     </ul>
                 </div>    
                 <img class="orange-last" src="./img/orange-last.png" alt="">

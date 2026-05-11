@@ -6,6 +6,7 @@
     <title>Мониторчики</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/quiz.css">
+    <link rel="stylesheet" href="./css/dino.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap" rel="stylesheet">
@@ -142,6 +143,44 @@
                 <button class="slider-btn slider-btn--next">›</button>
             </div>
         </section>
+
+        <section class="game-section">
+            <div class="game-container" id="gameContainer">
+                <button class="fullscreen-btn" onclick="toggleFullscreen()">🎮 На весь экран 🎮</button>
+                <div class="game-wrapper" id="gameWrapper">
+                    <div id="startScreen">
+                        <h1>🔐 "Просто плашку поставить"</h1>
+                        <h3>Успеете ли вы пройти игру до того как хакер подберёт ваш пароль?</h3>
+                        <h3>Самое время узнать!</h3>
+                        <br>
+                        <h2>Введите пароль</h2>
+                        <input id="passwordInput" type="text" placeholder="Придумайте пароль">
+                        <br><br>
+                        <button onclick="startGame()">Начать игру</button>
+                        <br><br>
+                        <h3>⬆️ Пробел - прыжок, ⬇️ Стрелка вниз - пригнуться</h3>
+                        <h3>🎮 Нажмите на область игры для управления</h3>
+                    </div>
+    
+                    <div id="terminal" style="display:none;">
+                        Пароль: <span id="password"></span><br>
+                        Подбор: <span id="hack"></span><br>
+                        Очки: <span id="score">0</span>
+                        <div id="log"></div>
+                    </div>
+    
+                    <canvas id="game" style="display:none;"></canvas>
+    
+                    <div id="gameControls" style="display:none;">
+                        <button onclick="jump()">⬆️ Прыжок</button>
+                        <button onmousedown="duck(true)" onmouseup="duck(false)" ontouchstart="duck(true)" ontouchend="duck(false)">⬇️ Присесть</button>
+                        <button onclick="resetGame()">🔄 Сброс</button>
+                        <button id="restartBtn" onclick="restartGame()" style="display:none;">🎮 Играть снова</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section>
             <div class="material-links">
                 <h2 class="green">Игры</h2>
@@ -222,5 +261,7 @@
     <script src="./script.js"></script>
     <script src="./quiz.min.js"></script>
     <script src="./slider.js"></script>
+    <script src="./dino.js"></script>
+
 </body>
 </html> 

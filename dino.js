@@ -133,14 +133,14 @@
        // Управление с клавиатуры (только когда игра активна)
        document.addEventListener("keydown", (e) => {
            if (!gameRunning) return;
-           if (e.code === "Space") {
-               e.preventDefault();
-               jump();
-           }
-           if (e.code === "ArrowDown") {
-               e.preventDefault();
-               duck(true);
-           }
+           if (e.code === "Space" || e.code === "KeyW" || e.code === "ArrowUp") {
+            e.preventDefault();
+            jump();
+        }
+        if (e.code === "ArrowDown" || e.code === "KeyS") {
+            e.preventDefault();
+            duck(true);
+        }
        });
    
        document.addEventListener("keyup", (e) => {
